@@ -2,74 +2,79 @@ package TiposDeDados;
 
 public class Desafio1 {
     public static void main(String[] args) {
-        String nomeNinja1 = "Naruto Uzumaki";
-        int idadeNinja1 = 16;
-        String missaoNinja1 = "Pular de galho em galho";
-        char dificuldadeNinja1 = 'A';
-        String statusNinja1;
+        // Ninja 1
+        String nome = "Naruto Uzumaki";
+        int idade = 14;
+        String missao = "Cobrir a vila";
+        char dificuldade = 'B';
+        String status;
 
-        if (idadeNinja1 < 15) {
-            if (dificuldadeNinja1 == 'C' || dificuldadeNinja1 == 'D') {
-                statusNinja1 = "CONCLUIDA";
+        if (idade < 15) {
+            if (dificuldade == 'C' || dificuldade == 'D') {
+                status = "CONCLUIDO";
             } else {
-                statusNinja1 = "NÃO CONCLUIDA";
+                status = "NAO CONCLUIDO";
             }
         } else {
-            statusNinja1 = "CONCLUIDA";
+            status = "CONCLUIDO";
         }
 
-        System.out.println("========================================");
-        System.out.println("Nome: " + nomeNinja1);
-        System.out.println("Idade: " + idadeNinja1);
-        System.out.println("Missao: " + missaoNinja1);
-        System.out.println("Dificuldade: " + dificuldadeNinja1);
-        System.out.println("Status: " + statusNinja1);
+        // Exibir no console
+        System.out.println("-----------------------------------------");
+        System.out.println("Nome do ninja: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Missão: " + missao);
+        System.out.println("Dificuldade: " + dificuldade);
+        System.out.println("Status: " + status);
 
-        String nomeNinja2 = "Sasuke Uchiha";
-        int idadeNinja2 = 16;
-        String missaoNinja2 = "Matar o irmão";
-        char dificuldadeNinja2 = 'S';
-        String statusNinja2 = "Em andamento";
+        // Ninja 2
+        String nome2 = "Sasuke Uchiha";
+        int idade2 = 15;
+        String missao2 = "Acompanhar ninjas";
+        char dificuldade2 = 'A';
+        String status2;
 
-        if (idadeNinja2 < 15) {
-            if (dificuldadeNinja1 == 'C' || dificuldadeNinja1 == 'D') {
-                statusNinja2 = "CONCLUIDA";
+        if (idade2 < 15) {
+            if (dificuldade2 == 'C' || dificuldade2 == 'D') {
+                status2 = "CONCLUIDO";
             } else {
-                statusNinja2 = "NÃO CONCLUIDA";
+                status2 = "NAO CONCLUIDO";
             }
         } else {
-            statusNinja2 = "CONCLUIDA";
+            status2 = "CONCLUIDO";
         }
 
-        System.out.println("========================================");
-        System.out.println("Nome: " + nomeNinja2);
-        System.out.println("Idade: " + idadeNinja2);
-        System.out.println("Missao: " + missaoNinja2);
-        System.out.println("Dificuldade: " + dificuldadeNinja2);
-        System.out.println("Status: " + statusNinja2);
-        System.out.println("========================================");
+        System.out.println("-----------------------------------------");
+        System.out.println("Nome do ninja: " + nome2);
+        System.out.println("Idade: " + idade2);
+        System.out.println("Missão: " + missao2);
+        System.out.println("Dificuldade: " + dificuldade2);
+        System.out.println("Status: " + status2);
 
-        String nomeNinja3 = "Sakura Haruno";
-        int idadeNinja3 = 14;
-        String missaoNinja3 = "Curar todo mundo";
-        char dificuldadeNinja3 = 'D';
-        String statusNinja3 = "Concluido";
+        // Ninja 3
+        String nome3 = "Sakura Haruno";
+        int idade3 = 14;
+        String missao3 = "Curar feridos de guerra";
+        char dificuldade3 = 'C';
+        String status3;
 
-        if (idadeNinja3 < 15) {
-            if (dificuldadeNinja1 == 'C' || dificuldadeNinja1 == 'D') {
-                statusNinja3 = "CONCLUIDA";
+        if (idade3 < 15) {
+            if (dificuldade3 == 'C' || dificuldade3 == 'D') {
+                status3 = "CONCLUIDO";
             } else {
-                statusNinja3 = "NÃO CONCLUIDA";
+                status3 = "NAO CONCLUIDO";
             }
         } else {
-            statusNinja3 = "CONCLUIDA";
+            status3 = "CONCLUIDO";
         }
 
-        System.out.println("Nome: " + nomeNinja3);
-        System.out.println("Idade: " + idadeNinja3);
-        System.out.println("Missao: " + missaoNinja3);
-        System.out.println("Dificuldade: " + dificuldadeNinja3);
-        System.out.println("Status: " + statusNinja3);
+        System.out.println("-----------------------------------------");
+        System.out.println("Nome do ninja: " + nome3);
+        System.out.println("Idade: " + idade3);
+        System.out.println("Missão: " + missao3);
+        System.out.println("Dificuldade: " + dificuldade3);
+        System.out.println("Status: " + status3);
+
 
     }
 }
