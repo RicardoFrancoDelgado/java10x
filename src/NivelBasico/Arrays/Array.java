@@ -4,10 +4,25 @@ import java.util.Arrays;
 
 public class Array {
     public static void main(String[] args) {
+        // O garbage colector fica responsável por tirar o array antigo da memória
         String[] nomes = new String[6];
         nomes[0] = "Naruto Uzumaki";
         nomes[1] = "Sasuke Uchiha";
         nomes[2] = "Sakura Haruno";
+
+        nomes = new String[6];
+        nomes[0] = "Tobirama";
+        nomes[1] = "Sasuke";
+        nomes[2] = "Sakura Haruno";
+        nomes[3] = "Satoro Gojo";
+        nomes[4] = "Kento Nanami";
+        nomes[5] = "Sukuna Hyumen";
+
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.println(nomes[i]);
+        }
+
+        System.out.println(nomes[0]);
 
         System.out.println(nomes[5]);
 
