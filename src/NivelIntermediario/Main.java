@@ -7,13 +7,22 @@ public class Main {
         sasuke.nome = "Sasuke Uchiha";
         sasuke.idade = 17;
         sasuke.aldeia = "Aldeia da Folha";
+        System.out.println(sasuke.nome);
+        sasuke.SharinganAtivado();
+
+        int quantoFalta = sasuke.seTornarHokage(60);
+        System.out.println("Você tem " + sasuke.idade + " anos faltam " + quantoFalta + " anos para você se tornar um hokage");
 
         Ninja naruto = new Ninja();
         naruto.nome = "Naruto";
         naruto.aldeia = "Aldeia da Folha";
         naruto.idade = 16;
+        System.out.println(naruto.nome);
+        String mensagem = naruto.euSouUmNinja();
+        System.out.println(mensagem);
 
-        System.out.println(sasuke);
-        System.out.println(naruto);
+
+//        System.out.println(sasuke);
+//        System.out.println(naruto);
     }
 }
