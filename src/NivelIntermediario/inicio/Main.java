@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.inicio;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +20,9 @@ public class Main {
         System.out.println(naruto.nome);
         String mensagem = naruto.euSouUmNinja();
         System.out.println(mensagem);
+        // problema 1: O naruto também pode ativar o sharingan
+        naruto.SharinganAtivado();
 
 
-//        System.out.println(sasuke);
-//        System.out.println(naruto);
     }
 }
