@@ -17,12 +17,13 @@ public class Desafio2 {
         int opcao = 0;
 
         // DISPLAY PRO USUÁRIO
-        while (opcao != 3) {
+        while (opcao != 4) {
             // MENU
             System.out.println("\n====== Cadastro de Ninjas ======");
             System.out.println("1. Cadastrar um ninja");
             System.out.println("2. Listar um ninja");
-            System.out.println("3. Sair");
+            System.out.println("3. Deletar um ninja");
+            System.out.println("4. Sair");
             System.out.print("Informa uma opção: ");
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -50,6 +51,21 @@ public class Desafio2 {
                     }
                     break;
                 case 3:
+                    System.out.println("Qual ninja deseja excluir ?");
+                    for (int i = 0; i < ninjas.length; i++) {
+                        System.out.println(i + ". " + ninjas[i]);
+                    }
+                    System.out.println("Informe o número do ninja para excluir: ");
+                    int excluirNinja = scanner.nextInt();
+
+                    if (ninjas[excluirNinja] != null) {
+                        ninjas[excluirNinja] = null;
+                        System.out.println("Ninja excluida com sucesso!");
+                    } else {
+                        System.out.println("Não tem nenhum ninja para excluir");
+                    }
+                    break;
+                case 4:
                     System.out.println("Encerrando o programa...");
                     break;
                 default:
