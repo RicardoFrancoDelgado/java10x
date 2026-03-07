@@ -1,6 +1,6 @@
 package NivelIntermediario.construtores;
 
-public class Hokage {
+public abstract class Hokage {
     String nome;
     String aldeia;
     int idade;
@@ -8,6 +8,8 @@ public class Hokage {
     int missoes;
     double altura;
     double saldoBancario;
+
+    public abstract void sabedoriaHokage();
 
     // non args constructor -> construtor com nenhum argumento (vem padrão)
     public Hokage() {
