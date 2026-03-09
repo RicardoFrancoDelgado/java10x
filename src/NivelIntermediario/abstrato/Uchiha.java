@@ -2,9 +2,12 @@ package NivelIntermediario.abstrato;
 
 public class Uchiha extends Ninja {
 
+    public Uchiha() {
+        super();
+    }
+
     public Uchiha(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
+        super(nome, idade);
     }
 
     @Override

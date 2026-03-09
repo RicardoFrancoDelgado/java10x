@@ -2,10 +2,12 @@ package NivelIntermediario.abstrato;
 
 public class Uzumaki extends Ninja{
 
-    // construtor
-    public Uzumaki(String nome, int idade){
-        this.nome = nome;
-        this.idade = idade;
+    public Uzumaki() {
+        super();
+    }
+
+    public Uzumaki(String nome, int idade) {
+        super(nome, idade);
     }
 
     @Override
