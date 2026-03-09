@@ -2,11 +2,12 @@ package NivelIntermediario.abstrato;
 
 public class Main {
     public static void main(String[] args) {
-        Uzumaki Naruto = new Uzumaki();
-        Naruto.nome = "Naruto";
-        System.out.println(Naruto.nome);
-        Naruto.jogarKunai();
+        // Ninja generico = new Ninja(); -> Não é mais possível
 
-        Naruto.fazerClone();
+        Uzumaki Naruto = new Uzumaki("Naruto Uzumaki", 17);
+        Naruto.tecnicaJutsu();
+
+        Uchiha Sasuke = new Uchiha("Sasuke Uchiha", 17);
+        Sasuke.tecnicaJutsu();
     }
 }

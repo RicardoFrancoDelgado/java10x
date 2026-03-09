@@ -1,14 +1,15 @@
 package NivelIntermediario.abstrato;
 
-public class Uzumaki extends Ninja implements UzumakiInterface{
+public class Uzumaki extends Ninja{
 
-    @Override
-    public void fazerClone() {
-        System.out.println("Fiz um clone");
+    // construtor
+    public Uzumaki(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
     }
 
     @Override
-    public void jogarKunai() {
-        System.out.println("Joguei uma kunai");
+    public void tecnicaJutsu() {
+        System.out.println("Eu sou " + nome + " e minha técnica é jutsu de clones");
     }
 }

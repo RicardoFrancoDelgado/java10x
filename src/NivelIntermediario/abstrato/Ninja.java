@@ -1,8 +1,13 @@
 package NivelIntermediario.abstrato;
 
-public abstract class Ninja {
+// para proteger uma classe de ser instanciada (abstract)
+
+public abstract class Ninja implements JutsuHabilidades{
     String nome;
     int idade;
 
-    public abstract void jogarKunai();
+    @Override
+    public void tecnicaJutsu(){
+        System.out.println("Habilidade ninja jutsu");
+    }
 }
