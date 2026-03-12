@@ -1,6 +1,6 @@
 package NivelIntermediario.sobrecarga;
 
-public class Uchiha extends Ninja{
+public class Uchiha extends Ninja implements EstrategiaNinja{
 
     //TODO: Construtores padrão
 
@@ -21,5 +21,22 @@ public class Uchiha extends Ninja{
 
     public void jutsuUchiha() {
         System.out.println("Meu nome é: " + nome + " e essa é minha técnica uchiha: " + tecnica);
+    }
+
+    @Override
+    public void estrategiaDeBatalha() {
+        System.out.println("Essa é a minha estratégia de batalha");
+    }
+
+    @Override
+    public void estrategiaDeBatalha(int qi) {
+        if (qi > 150) {
+            System.out.println("Ninja: " + nome + " | QI: " + qi + " | Status: GÊNIO");
+        } else if (qi >= 120) {
+            System.out.println("Ninja: " + nome + " | QI: " + qi + " | Status: PROMISSOR");
+        } else {
+            System.out.println("Ninja: " + nome + " | QI: " + qi + " | Status: EM DESENVOLVIMENTO");
+        }
+
     }
 }
