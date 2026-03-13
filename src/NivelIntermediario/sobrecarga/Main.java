@@ -12,5 +12,6 @@ public class Main {
         madara.jutsuUchiha();
 
         madara.estrategiaDeBatalha(190);
+        System.out.println(madara);
     }
 }

@@ -39,4 +39,16 @@ public class Uchiha extends Ninja implements EstrategiaNinja{
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "Uchiha{" +
+                "nome='" + nome + '\'' +
+                ", aldeia='" + aldeia + '\'' +
+                ", idade=" + idade +
+                ", missoesConcluidas=" + missoesConcluidas +
+                ", rank=" + rank +
+                ", tecnica='" + tecnica + '\'' +
+                '}';
+    }
 }
