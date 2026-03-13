@@ -13,5 +13,6 @@ public class Main {
 
         madara.estrategiaDeBatalha(190);
         System.out.println(madara);
+        madara.jogarKunai();
     }
 }

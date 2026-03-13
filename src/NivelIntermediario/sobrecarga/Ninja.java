@@ -27,4 +27,8 @@ public class Ninja {
         this(nome, aldeia, idade,  missoesConcluidas, rank);
         this.tecnica = tecnica;
     }
+
+    public final void jogarKunai() {
+        System.out.println(nome + " jogou a Kunai");
+    }
 }

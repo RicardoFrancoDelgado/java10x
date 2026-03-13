@@ -40,6 +40,12 @@ public class Uchiha extends Ninja implements EstrategiaNinja{
 
     }
 
+    // não é possível sobrescrever métodos final
+//    @Override
+//    public final void jogarKunai() {
+//        System.out.println(nome + " jogou a Kunai");
+//    }
+
     @Override
     public String toString() {
         return "Uchiha{" +
