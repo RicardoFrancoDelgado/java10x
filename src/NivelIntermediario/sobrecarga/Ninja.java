@@ -8,6 +8,10 @@ public class Ninja {
     NivelNinja rank;
     String tecnica;
 
+    // atributos final são declarados na instancia e não podem ser reatribuidos (são constantes)
+//    final double altura = 2.10;
+//    double altura = 1.90;
+
     public Ninja() {
     }
 
