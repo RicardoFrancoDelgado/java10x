@@ -1,9 +1,9 @@
 package NivelIntermediario.genericos;
 
-public class Equipamento {
+public class EquipamentoNinja {
     private String nome;
 
-    public Equipamento(String nome) {
+    public EquipamentoNinja(String nome) {
         this.nome = nome;
     }
 

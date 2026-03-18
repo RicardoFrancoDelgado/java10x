@@ -3,16 +3,17 @@ package NivelIntermediario.genericos;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BolsaEquipamentos<T> {
+public class BolsaNinja<T> {
     private List<T> equipamentos;
 
-    public BolsaEquipamentos() {
+    // O construtor instancia uma lista vazia de equipamentos
+    public BolsaNinja() {
         this.equipamentos = new ArrayList<>();
     }
 
-    // Adicionando equipamentos genéricos
-    public void adicionarEquipamento(T equipamento) {
-        this.equipamentos.add(equipamento);
+    // adicionar equipamentos na lista
+    public void adicionarEquipamentos(T equipamento) {
+        equipamentos.add(equipamento);
     }
 
     public List<T> getEquipamentos() {

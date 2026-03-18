@@ -2,14 +2,14 @@ package NivelIntermediario.genericos;
 
 public class Main {
     public static void main(String[] args) {
-        Equipamento kunai = new Equipamento("Kunai de ferro");
-        Equipamento shuriken = new Equipamento("Shukiren");
-        Equipamento pergaminho = new Equipamento("Pergaminho");
+        EquipamentoNinja kunai = new EquipamentoNinja("Kunai de ferro");
+        EquipamentoNinja pergaminho = new EquipamentoNinja("Pergaminho");
+        EquipamentoNinja shuriken = new EquipamentoNinja("Shuriken de fogo");
 
-        BolsaEquipamentos<Equipamento> bolsaDeEquipamentos = new BolsaEquipamentos<>();
-        bolsaDeEquipamentos.adicionarEquipamento(kunai);
-        bolsaDeEquipamentos.adicionarEquipamento(shuriken);
-        bolsaDeEquipamentos.adicionarEquipamento(pergaminho);
+        BolsaNinja<EquipamentoNinja> bolsaDeEquipamentos = new BolsaNinja<>();
+        bolsaDeEquipamentos.adicionarEquipamentos(kunai);
+        bolsaDeEquipamentos.adicionarEquipamentos(pergaminho);
+        bolsaDeEquipamentos.adicionarEquipamentos(shuriken);
 
         System.out.println(bolsaDeEquipamentos);
     }
