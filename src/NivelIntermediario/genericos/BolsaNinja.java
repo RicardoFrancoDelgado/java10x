@@ -1,31 +1,27 @@
 package NivelIntermediario.genericos;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
+// Colocar um <T> ao lado da classe torna essa classe apta para receber um generic
 public class BolsaNinja<T> {
-    private List<T> equipamentos;
+    // A estrutura que vai permitir armazenar qualquer tipo de equipamento na bolsa
+    List<T> equipamentos;
 
-    // O construtor instancia uma lista vazia de equipamentos
     public BolsaNinja() {
-        this.equipamentos = new ArrayList<>();
+        equipamentos = new ArrayList<>();
     }
 
-    // adicionar equipamentos na lista
-    public void adicionarEquipamentos(T equipamento) {
+    // method para adicionar equipamentos na bolsa
+    public void adicionarEquipamento(T equipamento) {
         equipamentos.add(equipamento);
     }
 
-    public List<T> getEquipamentos() {
-        return equipamentos;
-    }
-
-    public void setEquipamentos(List<T> equipamentos) {
-        this.equipamentos = equipamentos;
-    }
-
-    @Override
-    public String toString() {
-        return "Bolsa de equipamentos: " + equipamentos.toString();
+    // exibir os equipamentos adicionados
+    public void mostrarEquipamentos() {
+        for (T equipamento : equipamentos) {
+            System.out.println(equipamento);
+        }
     }
 }
